@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 function Hero() {
   const [randomPositions, setRandomPositions] = useState([
-    { x: 100, y: 200, direction: 1 },
+    { x: 1800, y: 200, direction: 1 },
     { x: 300, y: 400, direction: -1 },
     { x: 500, y: 100, direction: 1 },
-    { x: 50, y: 50, direction: 1 }, 
+    { x: 50, y: 50, direction: 1 },
   ]);
 
   useEffect(() => {
@@ -27,19 +27,43 @@ function Hero() {
 
   return (
     <div className="relative flex flex-col font-poppins justify-center items-center h-screen bg-slate-100 overflow-hidden">
-      {/* Lingkaran acak di kiri atas */}
       {randomPositions.map((pos, index) => (
         <div
           key={index}
           className="absolute w-64 h-64 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full pointer-events-none blur-3xl opacity-60"
           style={{
-            transform: `translate(${pos.x}px, ${pos.y}px)`,
-            zIndex: index === 0 ? 20 : 0, // Memastikan lingkaran pertama berada di atas konten
+            transform: `translate(${pos.x}px, ${pos.y}px)`
           }}
         ></div>
       ))}
 
-      {/* Konten */}
+
+      <img
+        src="/1.png"
+        alt="Decorative 1"
+        className="absolute z-30 md:w-32 md:h-32 w-20 h-20 animate-float"
+        style={{ top: "10%", left: "5%" }}
+      />
+      <img
+        src="/2.png"
+        alt="Decorative 2"
+        className="absolute z-30 md:w-32 md:h-32 w-20 h-20 animate-float"
+        style={{ top: "20%", right: "10%" }}
+      />
+      <img
+        src="/3.png"
+        alt="Decorative 3"
+        className="absolute z-30 md:w-32 md:h-32 w-20 h-20 animate-float"
+        style={{ bottom: "20%", right: "10%" }}
+      />
+      <img
+        src="/4.png"
+        alt="Decorative 4"
+        className="absolute z-30 md:w-32 md:h-32 w-20 h-20 animate-float"
+        style={{ bottom: "15%", left: "25%" }}
+      />
+
+
       <div className="z-20 text-center">
         <h1 className="text-4xl md:text-9xl mb-1 font-bold italic text-blue-700">
           Web Developer
@@ -48,6 +72,22 @@ function Hero() {
           Muhammad Siddiq Fathurahman
         </h2>
       </div>
+
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 }
