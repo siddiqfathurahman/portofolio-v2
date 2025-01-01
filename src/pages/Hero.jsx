@@ -65,7 +65,7 @@ function Hero() {
 
 
       <div className="z-20 text-center">
-        <h1 className="text-6xl md:text-[160px] font-lilitaone mb-1 font-bold italic bg-gradient-to-r from-blue-800 to-fuchsia-700 bg-clip-text text-transparent">
+        <h1 className="text-6xl md:text-[160px] font-lilitaone mb-1 font-bold italic text-blue-700">
           Web Developer
         </h1>
         <h2 className="text-sm md:text-2xl font-semibold text-black">

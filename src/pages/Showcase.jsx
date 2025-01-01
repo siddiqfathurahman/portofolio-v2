@@ -45,7 +45,7 @@ const Showcase = () => {
             {certificateData.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center cursor-pointer"
+                className="flex flex-col items-center justify-center cursor-pointer shadow-lg"
                 onClick={() => setModalImage(item.img)}
               >
                 <img src={item.img} alt="certificatefatur" className="rounded-lg" />
@@ -75,8 +75,8 @@ const Showcase = () => {
   return (
     <div className="p-8 md:px-36 font-poppins bg-slate-100 relative">
       <div className="text-center font-poppins">
-        <h1 className="md:text-6xl text-2xl font-bold">Portofolio Showcase</h1>
-        <p className="max-w-[730px] mx-auto mt-4 mb-7">
+        <h1 className="md:text-7xl text-2xl text-blue-900 font-extrabold">Portofolio Showcase</h1>
+        <p className="max-w-[730px] mx-auto text-sm md:text-xl mt-2 mb-7">
           Discover my journey through projects, certifications, and technical expertise. Each
           section highlights a milestone in my ongoing pursuit of knowledge and growth.
         </p>
