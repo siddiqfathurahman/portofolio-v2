@@ -7,7 +7,7 @@ import Showcase from './pages/Showcase'
 function App() {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     <Hero />
     <Profil />
     <Showcase />

@@ -26,11 +26,11 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative flex flex-col font-poppins justify-center items-center h-screen bg-slate-100 overflow-hidden">
+    <div className="relative flex flex-col h-[900px] font-poppins justify-center items-center h-screen bg-slate-100 overflow-hidden">
       {randomPositions.map((pos, index) => (
         <div
           key={index}
-          className="absolute w-64 h-64 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full pointer-events-none blur-3xl opacity-60"
+          className="absolute w-64 h-44 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full pointer-events-none blur-3xl opacity-60"
           style={{
             transform: `translate(${pos.x}px, ${pos.y}px)`
           }}
@@ -65,10 +65,10 @@ function Hero() {
 
 
       <div className="z-20 text-center">
-        <h1 className="text-4xl md:text-9xl mb-1 font-bold italic text-blue-700">
+        <h1 className="text-6xl md:text-[160px] font-lilitaone mb-1 font-bold italic bg-gradient-to-r from-blue-800 to-fuchsia-700 bg-clip-text text-transparent">
           Web Developer
         </h1>
-        <h2 className="text-lg md:text-2xl font-semibold text-black">
+        <h2 className="text-sm md:text-2xl font-semibold text-black">
           Muhammad Siddiq Fathurahman
         </h2>
       </div>

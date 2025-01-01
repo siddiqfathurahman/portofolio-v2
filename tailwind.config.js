@@ -7,14 +7,15 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        lilitaone: ["Lilita One", "serif"]
       },
       animation: {
-        "bounce-slow": "bounceSlow 3s ease-in-out infinite", // Animasi gerakan naik-turun
+        "bounce-slow": "bounceSlow 3s ease-in-out infinite", 
       },
       keyframes: {
         bounceSlow: {
-          "0%, 100%": { transform: "translateY(0)" }, // Posisi awal dan akhir
-          "50%": { transform: "translateY(-20px)" },  // Gerakan ke atas
+          "0%, 100%": { transform: "translateY(0)" }, 
+          "50%": { transform: "translateY(-20px)" },  
         },
       },
     },
