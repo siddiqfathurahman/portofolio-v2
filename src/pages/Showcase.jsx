@@ -163,20 +163,15 @@ const Showcase = () => {
   )}
 </div>
 
-                    <div className="mt-auto flex justify-between items-center">
-                      <a
-                        href={project.demo}
-                        className="text-blue-800 hover:underline flex items-center gap-1"
-                      >
-                        Live Demo <FaArrowUpRightFromSquare />
-                      </a>
-                      <a
-                        href={project.link}
-                        className="bg-white border-2 flex items-center gap-2 border-black text-slate-800 px-4 py-1 rounded-lg"
-                      >
-                        Details <FaArrowRight />
-                      </a>
-                    </div>
+<div className="flex justify-end pt-3">
+  <a
+    href={project.demo}
+    className="text-blue-800 hover:underline flex items-center gap-1"
+  >
+    Live Demo <FaArrowUpRightFromSquare />
+  </a>
+</div>
+
                   </div>
                 </div>
               ))}
