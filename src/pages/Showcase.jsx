@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { FaCode } from "react-icons/fa";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { GrTechnology } from "react-icons/gr";
+import { FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("Project");
   const [modalImage, setModalImage] = useState(null);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   const techStackData = [
     { img: "/reactjs.svg", ket: "ReactJs" },
@@ -26,17 +33,171 @@ const Showcase = () => {
     { img: "/resfull.jpg" },
   ];
 
+  const projectData = [
+    {
+      img: "/bg.JPG",
+      title: "Masjid AL-ANHAR",
+      desk: "Website masjid adalah platform digital yang menyediakan jadwal salat terintegrasi API dan Al-Qur'an digital lengkap dengan terjemahan dan latin, memudahkan jamaah dalam beribadah dan mengakses informasi masjid.",
+      tech1: { icon: <FaReact />, name: "ReactJs" },
+      tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
+      demo: "#",
+      link: "#",
+    },
+    {
+      img: "/bg.JPG",
+      title: "Layanan Pembuatan CV",
+      desk: "Website layanan pembuatan CV adalah platform yang membantu pengguna membuat CV profesional dengan cepat dan mudah. Website ini dirancang untuk meningkatkan peluang karier pengguna.",
+      tech1: { icon: <FaReact />, name: "ReactJs" },
+      tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
+      demo: "#",
+      link: "#",
+    },
+    {
+      img: "/bg.JPG",
+      title: "Layanan Smart Home",
+      desk: "Website layanan smart home adalah platform digital yang menawarkan solusi otomatisasi rumah untuk keamanan, efisiensi energi, dan kenyamanan. Dilengkapi fitur kontrol perangkat pintar, pemantauan jarak jauh, dan integrasi dengan teknologi terbaru, website ini memudahkan pengguna mengelola rumah secara cerdas dan praktis.",
+      tech1: { icon: <FaReact />, name: "ReactJs" },
+      tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
+      demo: "#",
+      link: "#",
+    },
+    {
+      img: "/bg.JPG",
+      title: "Layanan Cloud",
+      desk: "Website penyedia cloud adalah platform yang menawarkan layanan penyimpanan data, komputasi, dan infrastruktur digital berbasis awan. Dengan fitur skalabilitas, keamanan tinggi, dan akses fleksibel, website ini mendukung kebutuhan individu maupun bisnis dalam mengelola data dan aplikasi secara efisien.",
+      tech1: { icon: <FaReact />, name: "ReactJs" },
+      tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
+      demo: "#",
+      link: "#",
+    },
+    {
+      img: "/bg.JPG",
+      title: "UMKM Ayam Geprek",
+      desk: "Website UMKM Ayam Geprek menjadi media digital untuk mempromosikan menu unggulan, menerima pesanan online, dan menjangkau pelanggan lebih luas. Platform ini dirancang dengan fitur seperti galeri produk, informasi promo, dan menginformasikan berbagai cabangnya.",
+      tech1: { icon: <FaHtml5 />, name: "HTML" },
+      tech2: { icon: <FaCss3Alt />, name: "CSS" },
+      demo: "#",
+      link: "#",
+    },
+    {
+      img: "/bg.JPG",
+      title: "Portofolio-v1",
+      desk: "Portofolio-v1 adalah website pertama yang saya buat untuk menampilkan karya dan pengalaman pribadi. Dengan desain sederhana namun fungsional, website ini menjadi langkah awal dalam memperkenalkan diri secara profesional di dunia digital.",
+      tech1: { icon: <FaHtml5 />, name: "HTML" },
+      tech2: { icon: <FaCss3Alt />, name: "CSS" },
+      demo: "#",
+      link: "#",
+    },
+  ];
+
   const renderContent = () => {
     switch (activeTab) {
       case "Project":
+        const visibleProjects = showAllProjects ? projectData : projectData.slice(0, 4);
         return (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-40 bg-gray-300 rounded-lg"></div>
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {visibleProjects.map((project, index) => (
+                <div
+                  key={index}
+                  className="bg-white text-black rounded-xl overflow-hidden shadow-xl flex flex-col h-full"
+                >
+                  <div className="relative">
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-full md:h-64 h-44 rounded-lg object-cover p-4"
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col h-full">
+                    <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+                    <p className="text-sm mb-4 flex-grow">{project.desk}</p>
+                    <div className="flex gap-2">
+  {project.tech1.name === "ReactJs" && (
+    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech1.icon}
+      {project.tech1.name}
+    </h2>
+  )}
+  {project.tech1.name === "Tailwind CSS" && (
+    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech1.icon}
+      {project.tech1.name}
+    </h2>
+  )}
+  {project.tech1.name === "HTML" && (
+    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech1.icon}
+      {project.tech1.name}
+    </h2>
+  )}
+  {project.tech1.name === "CSS" && (
+    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech1.icon}
+      {project.tech1.name}
+    </h2>
+  )}
+  {project.tech2.name === "ReactJs" && (
+    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech2.icon}
+      {project.tech2.name}
+    </h2>
+  )}
+  {project.tech2.name === "Tailwind CSS" && (
+    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech2.icon}
+      {project.tech2.name}
+    </h2>
+  )}
+  {project.tech2.name === "HTML" && (
+    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech2.icon}
+      {project.tech2.name}
+    </h2>
+  )}
+  {project.tech2.name === "CSS" && (
+    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+      {project.tech2.icon}
+      {project.tech2.name}
+    </h2>
+  )}
+</div>
+
+                    <div className="mt-auto flex justify-between items-center">
+                      <a
+                        href={project.demo}
+                        className="text-blue-800 hover:underline flex items-center gap-1"
+                      >
+                        Live Demo <FaArrowUpRightFromSquare />
+                      </a>
+                      <a
+                        href={project.link}
+                        className="bg-white border-2 flex items-center gap-2 border-black text-slate-800 px-4 py-1 rounded-lg"
+                      >
+                        Details <FaArrowRight />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              {showAllProjects ? (
+                <button
+                  onClick={() => setShowAllProjects(false)}
+                  className="flex items-center gap-2 mx-auto bg-red-800 text-white px-4 py-2 rounded-lg"
+                >
+                  See Less <FaChevronUp />
+                </button>
+              ) : (
+                <button
+                  onClick={() => setShowAllProjects(true)}
+                  className="flex items-center gap-2 mx-auto bg-purple-800 text-white px-4 py-2 rounded-lg"
+                >
+                  See All <FaChevronDown />
+                </button>
+              )}
+            </div>
           </div>
         );
       case "Certificate":
@@ -48,7 +209,7 @@ const Showcase = () => {
                 className="flex flex-col items-center justify-center cursor-pointer shadow-lg"
                 onClick={() => setModalImage(item.img)}
               >
-                <img src={item.img} alt="certificatefatur" className="rounded-lg" />
+                <img src={item.img} alt="certificate" className="rounded-lg" />
               </div>
             ))}
           </div>
@@ -81,7 +242,7 @@ const Showcase = () => {
           section highlights a milestone in my ongoing pursuit of knowledge and growth.
         </p>
       </div>
-      
+
       <div className="flex justify-between bg-slate-900 text-white p-2 rounded-2xl md:gap-4 gap-1 mb-8">
         <button
           className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
@@ -112,29 +273,26 @@ const Showcase = () => {
         </button>
       </div>
 
-
       {renderContent()}
 
-
-{/* Modal Certificate */}
-{modalImage && (
-  <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-    <div className="relative">
-      <img
-        src={modalImage}
-        alt="certificate"
-        className="rounded-lg max-w-[90vw] max-h-[90vh] object-contain"
-      />
-      <button
-        className="absolute top-4 right-4 text-white text-3xl font-bold bg-black rounded-xl w-8 h-8 flex items-center justify-center"
-        onClick={() => setModalImage(null)}
-      >
-        &times;
-      </button>
-    </div>
-  </div>
-)}
-
+      {/* Modal Certificate */}
+      {modalImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="relative">
+            <img
+              src={modalImage}
+              alt="certificate"
+              className="rounded-lg max-w-[90vw] max-h-[90vh] object-contain"
+            />
+            <button
+              className="absolute top-4 right-4 text-white text-3xl font-bold bg-black rounded-xl w-8 h-8 flex items-center justify-center"
+              onClick={() => setModalImage(null)}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
