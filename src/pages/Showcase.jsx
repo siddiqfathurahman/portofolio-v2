@@ -35,58 +35,52 @@ const Showcase = () => {
 
   const projectData = [
     {
-      img: "/bg.JPG",
+      img: "/masjidalanhar.png",
       title: "Masjid AL-ANHAR",
       desk: "Website masjid adalah platform digital yang menyediakan jadwal salat terintegrasi API dan Al-Qur'an digital lengkap dengan terjemahan dan latin, memudahkan jamaah dalam beribadah dan mengakses informasi masjid.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://masjid-al-anhar.vercel.app",
     },
     {
-      img: "/bg.JPG",
+      img: "/cv.png",
       title: "Layanan Pembuatan CV",
       desk: "Website layanan pembuatan CV adalah platform yang membantu pengguna membuat CV profesional dengan cepat dan mudah. Website ini dirancang untuk meningkatkan peluang karier pengguna.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://layanancv-web.vercel.app/",
     },
     {
-      img: "/bg.JPG",
+      img: "/homify.png",
       title: "Layanan Smart Home",
       desk: "Website layanan smart home adalah platform digital yang menawarkan solusi otomatisasi rumah untuk keamanan, efisiensi energi, dan kenyamanan. Dilengkapi fitur kontrol perangkat pintar, pemantauan jarak jauh, dan integrasi dengan teknologi terbaru, website ini memudahkan pengguna mengelola rumah secara cerdas dan praktis.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://homify-web.vercel.app/",
     },
     {
-      img: "/bg.JPG",
+      img: "/fahost.png",
       title: "Layanan Cloud",
       desk: "Website penyedia cloud adalah platform yang menawarkan layanan penyimpanan data, komputasi, dan infrastruktur digital berbasis awan. Dengan fitur skalabilitas, keamanan tinggi, dan akses fleksibel, website ini mendukung kebutuhan individu maupun bisnis dalam mengelola data dan aplikasi secara efisien.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://fahost.vercel.app/",
     },
     {
-      img: "/bg.JPG",
+      img: "/ayamgeprek.png",
       title: "UMKM Ayam Geprek",
       desk: "Website UMKM Ayam Geprek menjadi media digital untuk mempromosikan menu unggulan, menerima pesanan online, dan menjangkau pelanggan lebih luas. Platform ini dirancang dengan fitur seperti galeri produk, informasi promo, dan menginformasikan berbagai cabangnya.",
       tech1: { icon: <FaHtml5 />, name: "HTML" },
       tech2: { icon: <FaCss3Alt />, name: "CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://ayamgeprek.vercel.app/",
     },
     {
-      img: "/bg.JPG",
+      img: "/portov1.png",
       title: "Portofolio-v1",
       desk: "Portofolio-v1 adalah website pertama yang saya buat untuk menampilkan karya dan pengalaman pribadi. Dengan desain sederhana namun fungsional, website ini menjadi langkah awal dalam memperkenalkan diri secara profesional di dunia digital.",
       tech1: { icon: <FaHtml5 />, name: "HTML" },
       tech2: { icon: <FaCss3Alt />, name: "CSS" },
-      demo: "#",
-      link: "#",
+      demo: "https://portofolio-fatur-v1.vercel.app/",
     },
   ];
 
@@ -106,71 +100,71 @@ const Showcase = () => {
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-full md:h-64 h-44 rounded-lg object-cover p-4"
+                      className="w-full md:h-72 h-48 rounded-lg object-cover p-4"
                     />
                   </div>
                   <div className="p-6 flex flex-col h-full">
-                    <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+                    <h2 className="text-2xl font-bold -mt-5 mb-2">{project.title}</h2>
                     <p className="text-sm mb-4 flex-grow">{project.desk}</p>
                     <div className="flex gap-2">
-  {project.tech1.name === "ReactJs" && (
-    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech1.icon}
-      {project.tech1.name}
-    </h2>
-  )}
-  {project.tech1.name === "Tailwind CSS" && (
-    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech1.icon}
-      {project.tech1.name}
-    </h2>
-  )}
-  {project.tech1.name === "HTML" && (
-    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech1.icon}
-      {project.tech1.name}
-    </h2>
-  )}
-  {project.tech1.name === "CSS" && (
-    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech1.icon}
-      {project.tech1.name}
-    </h2>
-  )}
-  {project.tech2.name === "ReactJs" && (
-    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech2.icon}
-      {project.tech2.name}
-    </h2>
-  )}
-  {project.tech2.name === "Tailwind CSS" && (
-    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech2.icon}
-      {project.tech2.name}
-    </h2>
-  )}
-  {project.tech2.name === "HTML" && (
-    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech2.icon}
-      {project.tech2.name}
-    </h2>
-  )}
-  {project.tech2.name === "CSS" && (
-    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-      {project.tech2.icon}
-      {project.tech2.name}
-    </h2>
-  )}
-</div>
+                    {project.tech1.name === "ReactJs" && (
+                    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech1.icon}
+                        {project.tech1.name}
+                    </h2>
+                    )}
+                    {project.tech1.name === "Tailwind CSS" && (
+                    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech1.icon}
+                        {project.tech1.name}
+                    </h2>
+                    )}
+                    {project.tech1.name === "HTML" && (
+                    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech1.icon}
+                        {project.tech1.name}
+                    </h2>
+                    )}  
+                    {project.tech1.name === "CSS" && (
+                    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech1.icon}
+                        {project.tech1.name}
+                    </h2>
+                    )}
+                    {project.tech2.name === "ReactJs" && (
+                    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech2.icon}
+                        {project.tech2.name}
+                    </h2>
+                    )}
+                    {project.tech2.name === "Tailwind CSS" && (
+                    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech2.icon}
+                        {project.tech2.name}
+                    </h2>
+                    )}
+                    {project.tech2.name === "HTML" && (
+                    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech2.icon}
+                        {project.tech2.name}
+                    </h2>
+                    )}
+                    {project.tech2.name === "CSS" && (
+                    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                        {project.tech2.icon}
+                        {project.tech2.name}
+                    </h2>
+                    )}
+                </div>
 
-<div className="flex justify-end pt-3">
-  <a
-    href={project.demo}
-    className="text-blue-800 hover:underline flex items-center gap-1"
-  >
-    Live Demo <FaArrowUpRightFromSquare />
-  </a>
-</div>
+                <div className="flex justify-end pt-3">
+                    <a
+                        href={project.demo}
+                        className="text-blue-800 hover:underline flex items-center gap-1"
+                        >
+                        Live Demo <FaArrowUpRightFromSquare />
+                    </a>
+                </div>
 
                   </div>
                 </div>
@@ -195,6 +189,7 @@ const Showcase = () => {
             </div>
           </div>
         );
+        
       case "Certificate":
         return (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -209,6 +204,7 @@ const Showcase = () => {
             ))}
           </div>
         );
+
       case "Tech Stack":
         return (
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
@@ -229,7 +225,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className="p-8 md:px-36 font-poppins bg-slate-100 relative">
+    <div className="p-8 md:px-36 px-3 font-poppins bg-slate-100 relative">
       <div className="text-center font-poppins">
         <h1 className="md:text-7xl text-2xl text-blue-900 font-extrabold">Portofolio Showcase</h1>
         <p className="max-w-[730px] mx-auto text-sm md:text-xl mt-2 mb-7">
