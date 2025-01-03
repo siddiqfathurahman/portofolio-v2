@@ -37,7 +37,7 @@ const Showcase = () => {
     {
       img: "/masjidalanhar.png",
       title: "Masjid AL-ANHAR",
-      desk: "Website masjid adalah platform digital yang menyediakan jadwal salat terintegrasi API dan Al-Qur'an digital lengkap dengan terjemahan dan latin, memudahkan jamaah dalam beribadah dan mengakses informasi masjid.",
+      desk: "The mosque website is a digital platform that provides an integrated prayer schedule API and a complete digital Quran with translations and Latin script, making it easier for worshippers to perform their prayers and access mosque information.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
       demo: "https://masjid-al-anhar.vercel.app",
@@ -45,7 +45,7 @@ const Showcase = () => {
     {
       img: "/cv.png",
       title: "Layanan Pembuatan CV",
-      desk: "Website layanan pembuatan CV adalah platform yang membantu pengguna membuat CV profesional dengan cepat dan mudah. Website ini dirancang untuk meningkatkan peluang karier pengguna.",
+      desk: "The CV creation service website is a platform that helps users create professional CVs quickly and easily. This website is designed to enhance users' career opportunities.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
       demo: "https://layanancv-web.vercel.app/",
@@ -53,7 +53,7 @@ const Showcase = () => {
     {
       img: "/homify.png",
       title: "Layanan Smart Home",
-      desk: "Website layanan smart home adalah platform digital yang menawarkan solusi otomatisasi rumah untuk keamanan, efisiensi energi, dan kenyamanan. Dilengkapi fitur kontrol perangkat pintar, pemantauan jarak jauh, dan integrasi dengan teknologi terbaru, website ini memudahkan pengguna mengelola rumah secara cerdas dan praktis.",
+      desk: "The smart home service website is a digital platform offering home automation solutions for security, energy efficiency, and comfort. Equipped with features like smart device control, remote monitoring, and integration with the latest technologies, this website makes it easier for users to manage their homes intelligently and practically",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
       demo: "https://homify-web.vercel.app/",
@@ -61,15 +61,15 @@ const Showcase = () => {
     {
       img: "/fahost.png",
       title: "Layanan Cloud",
-      desk: "Website penyedia cloud adalah platform yang menawarkan layanan penyimpanan data, komputasi, dan infrastruktur digital berbasis awan. Dengan fitur skalabilitas, keamanan tinggi, dan akses fleksibel, website ini mendukung kebutuhan individu maupun bisnis dalam mengelola data dan aplikasi secara efisien.",
+      desk: "The cloud service website is a platform that offers data storage, computing, and cloud-based digital infrastructure services. With features like scalability, high security, and flexible access, this website supports individuals and businesses in managing data and applications efficiently.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
       demo: "https://fahost.vercel.app/",
     },
     {
       img: "/ayamgeprek.png",
-      title: "UMKM Ayam Geprek",
-      desk: "Website UMKM Ayam Geprek menjadi media digital untuk mempromosikan menu unggulan, menerima pesanan online, dan menjangkau pelanggan lebih luas. Platform ini dirancang dengan fitur seperti galeri produk, informasi promo, dan menginformasikan berbagai cabangnya.",
+      title: "Ayam Geprek",
+      desk: "The Ayam Geprek MSME website serves as a digital platform to promote signature menu items, accept online orders, and reach a broader customer base. It is designed with features like a product gallery, promotional information, and updates about its branches",
       tech1: { icon: <FaHtml5 />, name: "HTML" },
       tech2: { icon: <FaCss3Alt />, name: "CSS" },
       demo: "https://ayamgeprek.vercel.app/",
@@ -77,7 +77,7 @@ const Showcase = () => {
     {
       img: "/portov1.png",
       title: "Portofolio-v1",
-      desk: "Portofolio-v1 adalah website pertama yang saya buat untuk menampilkan karya dan pengalaman pribadi. Dengan desain sederhana namun fungsional, website ini menjadi langkah awal dalam memperkenalkan diri secara profesional di dunia digital.",
+      desk: "Portfolio-v1 is the first website I created to showcase my work and personal experiences. With a simple yet functional design, this website serves as my first step in introducing myself professionally in the digital world.",
       tech1: { icon: <FaHtml5 />, name: "HTML" },
       tech2: { icon: <FaCss3Alt />, name: "CSS" },
       demo: "https://portofolio-fatur-v1.vercel.app/",

@@ -12,7 +12,7 @@ const Profil = () => {
         </div>
   
         <div className="w-full md:mt-10">
-          <h1 className="md:text-4xl text-1xl font-bold mb-2">My Web <span className="text-blue-900">Development Journey</span></h1>
+          <h1 className="md:text-4xl text-3xl font-extrabold mb-2">My Web <span className="text-blue-900">Development Journey</span></h1>
           <p className="text-black leading-relaxed mb-2">
           I am a passionate Web Developer dedicated to crafting websites that are not only visually appealing but also responsive, fast, and highly functional. With expertise in HTML, CSS, JavaScript, and modern frameworks like React and Next.js, I bring your digital ideas to life with precision and creativity.
           </p>
