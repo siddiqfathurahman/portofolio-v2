@@ -24,6 +24,8 @@ const Showcase = () => {
     { img: "/vercel.svg", ket: "Vercel" },
     { img: "/bootstrap.svg", ket: "Bootstrap" },
     { img: "/vite.svg", ket: "Vite" },
+    { img: "/nextjs.png", ket: "Next Js" },
+    { img: "/ts.png", ket: "TypeScript" },
   ];
 
   const certificateData = [
@@ -160,9 +162,9 @@ const Showcase = () => {
                 <div className="flex justify-end pt-3">
                     <a
                         href={project.demo}
-                        className="text-blue-800 hover:underline flex items-center gap-1"
+                        className="text-blue-800 hover:underline flex items-center gap-2"
                         >
-                        Live Demo <FaArrowUpRightFromSquare />
+                        Live Demo <FaArrowUpRightFromSquare className="" />
                     </a>
                 </div>
 

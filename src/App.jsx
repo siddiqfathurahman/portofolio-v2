@@ -1,3 +1,4 @@
+import Card from './components/CardStudent'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './index.css'
@@ -13,6 +14,7 @@ function App() {
     {/* <Navbar /> */}
     <Hero />
     <Profil />
+    <Card />
     <Showcase />
     <GithubGraph />
     <Contact />
