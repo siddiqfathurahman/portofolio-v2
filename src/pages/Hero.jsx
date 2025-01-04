@@ -32,7 +32,7 @@ function Hero() {
       />
 
       <div className="z-20 text-center">
-        <h1 className="text-6xl md:text-[140px] font-lilitaone font-bold mb-1 text-blue-700">
+        <h1 className="text-6xl lg:text-10xl md:text-[140px] font-lilitaone font-bold mb-1 text-blue-700">
           WEB <span className="">DEVELOPER</span>
         </h1>
         <h2 className="text-xs md:text-2xl font-semibold border-2 inline-block border-red-800 py-1 px-3 rounded-xl text-black">

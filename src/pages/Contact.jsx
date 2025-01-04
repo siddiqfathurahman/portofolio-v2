@@ -23,9 +23,9 @@ const Contact = () => {
                 <span className='text-yellow-500'> life!</span>
             </h1>
 
-            <h2 className="md:text-3xl text-3xl font-extrabold mt-12">Hire Me</h2>
+            <h2 className="md:text-5xl text-3xl font-extrabold mt-12">Contact Me 👇</h2>
 
-            <div className="pt-5 flex justify-center gap-2">
+            <div className="pt-8 flex justify-center gap-2">
                 <a
                     href="https://www.instagram.com/fatrhmnnn"
                     target="_blank"
