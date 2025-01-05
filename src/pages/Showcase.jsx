@@ -209,11 +209,11 @@ const Showcase = () => {
 
       case "Tech Stack":
         return (
-          <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
             {techStackData.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center py-5 bg-white shadow-xl rounded-lg"
+                className="flex flex-col items-center justify-center py-5 bg-white shadow-xl rounded-lg "
               >
                 <img src={item.img} alt={item.ket} className="w-16 h-16 mb-2" />
                 <p className="text-lg font-semibold">{item.ket}</p>
@@ -227,7 +227,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className="p-8 md:px-36 lg:px-5 px-3 font-poppins bg-slate-100 relative">
+    <div className="p-8 md:px-36 px-3 font-poppins bg-slate-100 relative">
       <div className="text-center font-poppins">
         <h1 className="md:text-7xl text-2xl text-blue-900 font-extrabold">Portofolio Showcase</h1>
         <p className="max-w-[730px] mx-auto text-sm md:text-xl mt-2 mb-7">
