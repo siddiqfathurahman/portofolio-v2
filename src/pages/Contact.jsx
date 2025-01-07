@@ -31,7 +31,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center bg-white text-pink-500 md:p-4 p-3  rounded-lg shadow-xl transition-all duration-300 ${
-                        hoveredIcon === 'instagram' ? 'w-[200px]' : 'md:w-[65px] w-[50px]'
+                        hoveredIcon === 'instagram' ? 'w-[155px]' : 'md:w-[65px] w-[50px]'
                     }`}
                     onMouseEnter={() => handleMouseEnter('instagram')}
                     onMouseLeave={handleMouseLeave}
@@ -50,7 +50,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center bg-white text-black md:p-4 p-3  rounded-lg shadow-xl transition-all duration-300 ${
-                        hoveredIcon === 'github' ? 'w-[230px]' : 'md:w-[65px] w-[50px]'
+                        hoveredIcon === 'github' ? 'w-[210px]' : 'md:w-[65px] w-[50px]'
                     }`}
                     onMouseEnter={() => handleMouseEnter('github')}
                     onMouseLeave={handleMouseLeave}
@@ -69,7 +69,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center bg-white text-blue-700 md:p-4 p-3  rounded-lg shadow-xl transition-all duration-300 ${
-                        hoveredIcon === 'linkedin' ? 'w-[140px]' : 'md:w-[65px] w-[50px]'
+                        hoveredIcon === 'linkedin' ? 'w-[120px]' : 'md:w-[65px] w-[50px]'
                     }`}
                     onMouseEnter={() => handleMouseEnter('linkedin')}
                     onMouseLeave={handleMouseLeave}

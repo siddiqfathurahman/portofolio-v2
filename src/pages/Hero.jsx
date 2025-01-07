@@ -31,7 +31,7 @@ function Hero() {
         style={{ bottom: "15%", left: "25%", animationDelay: "1.5s" }}
       />
 
-      <div className="z-20 text-center">
+      <div className="z-40 text-center">
         <h1 className="text-6xl lg:text-10xl md:text-[140px] font-lilitaone font-bold mb-1 text-blue-700">
           WEB <span className="">DEVELOPER</span>
         </h1>
