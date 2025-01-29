@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCode } from "react-icons/fa";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { GrTechnology } from "react-icons/gr";
-import { FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -45,7 +45,7 @@ const Showcase = () => {
       desk: "The mosque website is a digital platform that provides an integrated prayer schedule API and a complete digital Quran with translations and Latin script, making it easier for worshippers to perform their prayers and access mosque information.",
       tech1: { icon: <FaReact />, name: "ReactJs" },
       tech2: { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
-      demo: "https://masjid-al-anhar.vercel.app",
+      demo: "https://masjidalanhar.com",
     },
     {
       img: "/cv.png",
@@ -74,7 +74,7 @@ const Showcase = () => {
     {
       img: "/ayamgeprek.png",
       title: "Ayam Geprek",
-      desk: "The Ayam Geprek MSME website serves as a digital platform to promote signature menu items, accept online orders, and reach a broader customer base. It is designed with features like a product gallery, promotional information, and updates about its branches",
+      desk: "The Ayam Geprek UMKM website serves as a digital platform to promote signature menu items, accept online orders, and reach a broader customer base. It is designed with features like a product gallery, promotional information, and updates about its branches",
       tech1: { icon: <FaHtml5 />, name: "HTML" },
       tech2: { icon: <FaCss3Alt />, name: "CSS" },
       demo: "https://ayamgeprek.vercel.app/",
@@ -166,6 +166,7 @@ const Showcase = () => {
                     <a
                         href={project.demo}
                         className="text-blue-800 hover:underline flex items-center gap-2"
+                        target="_blank"
                         >
                         Live Demo <FaArrowUpRightFromSquare className="" />
                     </a>
