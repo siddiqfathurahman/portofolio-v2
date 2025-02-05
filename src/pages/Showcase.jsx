@@ -37,7 +37,8 @@ const Showcase = () => {
     { img:"/logic.jpg"},
     { img:"/git.jpg"},
     { img:"/webdasar.jpg"},
-    { img:"/javascript.jpg"}
+    { img:"/javascript.jpg"},
+    { img:"/serti-lomba1.jpeg"},
   ];
 
   const projectData = [
