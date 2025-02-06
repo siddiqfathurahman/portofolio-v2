@@ -1,6 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 function Hero() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
+
   return (
     <div className="relative flex flex-col h-[900px] font-poppins justify-center items-center h-screen bg-slate-100 overflow-hidden">
 
@@ -11,27 +22,31 @@ function Hero() {
         alt="Decorative 1"
         className="absolute z-30 md:w-32 md:h-32 w-16 h-16 animate-float"
         style={{ top: "10%", left: "5%", animationDelay: "0s" }}
+        data-aos="fade-in"
       />
       <img
         src="/2.png"
         alt="Decorative 2"
         className="absolute z-30 blur-sm md:w-32 md:h-32 w-16 h-16 animate-float"
         style={{ top: "20%", right: "10%", animationDelay: "0.5s" }}
+        data-aos="fade-in"
       />
       <img
         src="/3.png"
         alt="Decorative 3"
         className="absolute z-30 md:w-32 md:h-32 w-16 h-16 animate-float"
         style={{ bottom: "20%", right: "10%", animationDelay: "1s" }}
+        data-aos="fade-in"
       />
       <img
         src="/4.png"
         alt="Decorative 4"
         className="absolute z-30 md:w-32 blur-sm md:h-32 w-16 h-16 animate-float"
         style={{ bottom: "15%", left: "25%", animationDelay: "1.5s" }}
+        data-aos="fade-in"
       />
 
-      <div className="z-40 text-center">
+      <div data-aos="fade-in" className="z-40 text-center">
         <h1 className="text-6xl lg:text-10xl md:text-[140px] font-lilitaone font-bold mb-1 text-blue-700">
           WEB <span className="">DEVELOPER</span>
         </h1>
