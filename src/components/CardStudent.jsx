@@ -10,7 +10,7 @@ const Card = () => {
           <img
             src="/smk2yk.jpeg"
             alt="SMKN 2 Yogyakarta"
-            className="md:w-20 w-10 h-auto rounded-2xl shadow-md"
+            className="md:w-20 md:h-auto w-10 h-auto rounded-2xl shadow-md"
           />
           <div className="flex flex-col w-full">
             <div className="flex justify-between items-center">

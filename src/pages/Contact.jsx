@@ -80,19 +80,20 @@ const Contact = () => {
           href="https://www.linkedin.com/in/MuhammadSiddiqFathurahman"
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex items-center bg-white text-blue-700 md:p-4 p-3  rounded-lg shadow-xl transition-all duration-300 ${
+          className={`flex items-center bg-white text-blue-700 md:p-4 p-3 rounded-lg shadow-xl transition-all duration-300 ${
             hoveredIcon === "linkedin" ? "w-[120px]" : "md:w-[65px] w-[50px]"
           }`}
           onMouseEnter={() => handleMouseEnter("linkedin")}
           onMouseLeave={handleMouseLeave}
+          aria-label="Kunjungi profil LinkedIn Muhammad Siddiq Fathurahman"
         >
           <Linkedin
             size={window.innerWidth < 768 ? 24 : 32}
             className="flex-shrink-0"
           />
           {hoveredIcon === "linkedin" && (
-            <span className="ml-4 flex-col text-xs  justify-center text-left font-semibold">
-              Likedln
+            <span className="ml-4 flex-col text-xs justify-center text-left font-semibold">
+              LinkedIn
             </span>
           )}
         </a>

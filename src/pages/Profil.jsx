@@ -8,7 +8,7 @@ const Profil = () => {
           <img
             src="/profil.png"
             alt="Placeholder"
-            className="w-[550px]"
+            className="w-[550px] h-auto"
           />
         </div>
   
