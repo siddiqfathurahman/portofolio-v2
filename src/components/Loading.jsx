@@ -12,7 +12,7 @@ const Loading = ({ fadeOut }) => {
         delay={300}
         animateBy="words"
         direction="top"
-        className="text-5xl font-extrabold"
+        className="text-4xl font-extrabold"
       />
     </div>
   );
