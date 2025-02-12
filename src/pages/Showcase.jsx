@@ -39,6 +39,7 @@ const Showcase = () => {
     { img:"/webdasar.jpg"},
     { img:"/javascript.jpg"},
     { img:"/serti-lomba1.jpeg"},
+    { img:"/serti-fundamental-web.jpg"},
   ];
 
   const projectData = [
@@ -91,6 +92,7 @@ const Showcase = () => {
       demo: "https://portofolio-fatur-v1.vercel.app/",
     },
   ];
+  
 
   const renderContent = () => {
     switch (activeTab) {

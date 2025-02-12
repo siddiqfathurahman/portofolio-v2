@@ -2,6 +2,8 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 
 const Profil = () => {
+
+  
     return (
       <div className="flex flex-col md:flex-row items-center md:items-start p-4 md:px-8 md:pt-40 py-10 bg-slate-100 font-poppins">
         <div className="w-full flex justify-center mb-4 md:mb-0">

@@ -1,6 +1,7 @@
 import { IoLocationSharp } from "react-icons/io5";
 
 const Card = () => {
+  
   return (
     <div className="bg-slate-100 flex justify-center py-10 font-poppins px-2">
       <div className="bg-slate-50 rounded-xl shadow-xl p-6 max-w-md md:max-w-xl w-full">
