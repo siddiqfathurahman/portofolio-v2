@@ -210,7 +210,7 @@ const Showcase = () => {
                 className="flex flex-col items-center justify-center cursor-pointer shadow-lg overflow-hidden group"
                 onClick={() => setModalImage(item.img)}
               >
-                <img src={item.img} alt="certificate" className="rounded-lg transition-transform duration-500 hover:scale-110" />
+                <img src={item.img} alt="certificate" className="rounded-lg transition-transform duration-500 hover:scale-105" />
               </div>
             ))}
           </div>
