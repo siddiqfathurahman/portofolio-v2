@@ -207,10 +207,10 @@ const Showcase = () => {
             {certificateData.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center cursor-pointer shadow-lg"
+                className="flex flex-col items-center justify-center cursor-pointer shadow-lg overflow-hidden group"
                 onClick={() => setModalImage(item.img)}
               >
-                <img src={item.img} alt="certificate" className="rounded-lg" />
+                <img src={item.img} alt="certificate" className="rounded-lg transition-transform duration-500 hover:scale-110" />
               </div>
             ))}
           </div>
