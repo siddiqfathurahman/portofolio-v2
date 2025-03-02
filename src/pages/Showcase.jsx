@@ -40,6 +40,7 @@ const Showcase = () => {
     { img:"/javascript.jpg"},
     { img:"/serti-lomba1.jpeg"},
     { img:"/serti-fundamental-web.jpg"},
+    { img:"/webdev.jpg"},
   ];
 
   const projectData = [
