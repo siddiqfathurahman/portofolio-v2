@@ -29,10 +29,8 @@ const Showcase = () => {
   ];
 
   const certificateData = [
-    { img: "/harisenin.jpg" },
-    { img: "/revou.jpg" },
-    { img: "/dibimbing.jpg" },
-    { img: "/resfull.jpg" },
+    { img:"/dbscertif.jpg"},
+    { img:"/webdev.jpg"},
     { img:"/software.jpg"},
     { img:"/logic.jpg"},
     { img:"/git.jpg"},
@@ -40,7 +38,10 @@ const Showcase = () => {
     { img:"/javascript.jpg"},
     { img:"/serti-lomba1.jpeg"},
     { img:"/serti-fundamental-web.jpg"},
-    { img:"/webdev.jpg"},
+    { img: "/harisenin.jpg" },
+    { img: "/revou.jpg" },
+    { img: "/dibimbing.jpg" },
+    { img: "/resfull.jpg" },
   ];
 
   const projectData = [
@@ -208,10 +209,10 @@ const Showcase = () => {
             {certificateData.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center cursor-pointer shadow-lg overflow-hidden group"
+                className="flex flex-col items-center justify-center cursor-pointer shadow-lg overflow-hidden rounded-lg group"
                 onClick={() => setModalImage(item.img)}
               >
-                <img src={item.img} alt="certificate" className="rounded-lg transition-transform duration-500 hover:scale-105" />
+                <img src={item.img} alt="certificate" className=" transition-transform duration-500 hover:scale-105" />
               </div>
             ))}
           </div>
