@@ -25,7 +25,7 @@ const Profil = () => {
             <p>siddiqfathurahman@gmail.com</p>
           </div>
           <div className="flex pt-5 gap-5">
-            <a href="/cv-muhsiddiqfathurahman.pdf" download className="bg-purple-700 text-white text-sm md:text-xl p-3 flex items-center gap-2 font-semibold rounded-2xl"><MdOutlineFileDownload className="text-2xl"/>Download CV</a>
+            <a href="/cv-muhammadsiddiqfathurahman.pdf" download className="bg-purple-700 text-white text-sm md:text-xl p-3 flex items-center gap-2 font-semibold rounded-2xl"><MdOutlineFileDownload className="text-2xl"/>Download CV</a>
           </div>
         </div>
       </div>
