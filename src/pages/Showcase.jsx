@@ -29,15 +29,15 @@ const Showcase = () => {
   ];
 
   const certificateData = [
-    { img:"/dbscertif.jpg"},
-    { img:"/webdev.jpg"},
-    { img:"/software.jpg"},
-    { img:"/logic.jpg"},
-    { img:"/git.jpg"},
-    { img:"/webdasar.jpg"},
-    { img:"/javascript.jpg"},
-    { img:"/serti-lomba1.jpeg"},
-    { img:"/serti-fundamental-web.jpg"},
+    { img: "/dbscertif.jpg" },
+    { img: "/webdev.jpg" },
+    { img: "/software.jpg" },
+    { img: "/logic.jpg" },
+    { img: "/git.jpg" },
+    { img: "/webdasar.jpg" },
+    { img: "/javascript.jpg" },
+    { img: "/serti-lomba1.jpeg" },
+    { img: "/serti-fundamental-web.jpg" },
     { img: "/harisenin.jpg" },
     { img: "/revou.jpg" },
     { img: "/dibimbing.jpg" },
@@ -94,12 +94,13 @@ const Showcase = () => {
       demo: "https://portofolio-fatur-v1.vercel.app/",
     },
   ];
-  
 
   const renderContent = () => {
     switch (activeTab) {
       case "Project":
-        const visibleProjects = showAllProjects ? projectData : projectData.slice(0, 4);
+        const visibleProjects = showAllProjects
+          ? projectData
+          : projectData.slice(0, 4);
         return (
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -116,69 +117,70 @@ const Showcase = () => {
                     />
                   </div>
                   <div className="p-6 flex flex-col h-full">
-                    <h2 className="text-2xl font-bold -mt-5 mb-2">{project.title}</h2>
+                    <h2 className="text-2xl font-bold -mt-5 mb-2">
+                      {project.title}
+                    </h2>
                     <p className="text-sm mb-4 flex-grow">{project.desk}</p>
                     <div className="flex gap-2">
-                    {project.tech1.name === "ReactJs" && (
-                    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech1.icon}
-                        {project.tech1.name}
-                    </h2>
-                    )}
-                    {project.tech1.name === "Tailwind CSS" && (
-                    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech1.icon}
-                        {project.tech1.name}
-                    </h2>
-                    )}
-                    {project.tech1.name === "HTML" && (
-                    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech1.icon}
-                        {project.tech1.name}
-                    </h2>
-                    )}  
-                    {project.tech1.name === "CSS" && (
-                    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech1.icon}
-                        {project.tech1.name}
-                    </h2>
-                    )}
-                    {project.tech2.name === "ReactJs" && (
-                    <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech2.icon}
-                        {project.tech2.name}
-                    </h2>
-                    )}
-                    {project.tech2.name === "Tailwind CSS" && (
-                    <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech2.icon}
-                        {project.tech2.name}
-                    </h2>
-                    )}
-                    {project.tech2.name === "HTML" && (
-                    <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech2.icon}
-                        {project.tech2.name}
-                    </h2>
-                    )}
-                    {project.tech2.name === "CSS" && (
-                    <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
-                        {project.tech2.icon}
-                        {project.tech2.name}
-                    </h2>
-                    )}
-                </div>
+                      {project.tech1.name === "ReactJs" && (
+                        <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech1.icon}
+                          {project.tech1.name}
+                        </h2>
+                      )}
+                      {project.tech1.name === "Tailwind CSS" && (
+                        <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech1.icon}
+                          {project.tech1.name}
+                        </h2>
+                      )}
+                      {project.tech1.name === "HTML" && (
+                        <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech1.icon}
+                          {project.tech1.name}
+                        </h2>
+                      )}
+                      {project.tech1.name === "CSS" && (
+                        <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech1.icon}
+                          {project.tech1.name}
+                        </h2>
+                      )}
+                      {project.tech2.name === "ReactJs" && (
+                        <h2 className="bg-blue-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech2.icon}
+                          {project.tech2.name}
+                        </h2>
+                      )}
+                      {project.tech2.name === "Tailwind CSS" && (
+                        <h2 className="bg-red-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech2.icon}
+                          {project.tech2.name}
+                        </h2>
+                      )}
+                      {project.tech2.name === "HTML" && (
+                        <h2 className="bg-yellow-500 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech2.icon}
+                          {project.tech2.name}
+                        </h2>
+                      )}
+                      {project.tech2.name === "CSS" && (
+                        <h2 className="bg-purple-800 text-white py-1 text-sm px-2 flex gap-2 items-center rounded-lg">
+                          {project.tech2.icon}
+                          {project.tech2.name}
+                        </h2>
+                      )}
+                    </div>
 
-                <div className="flex justify-end pt-3">
-                    <a
+                    <div className="flex justify-end pt-3">
+                      <a
                         href={project.demo}
                         className="text-blue-800 hover:underline flex items-center gap-2"
                         target="_blank"
-                        >
+                      >
                         Live Demo <FaArrowUpRightFromSquare className="" />
-                    </a>
-                </div>
-
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -202,7 +204,7 @@ const Showcase = () => {
             </div>
           </div>
         );
-        
+
       case "Certificate":
         return (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -212,7 +214,11 @@ const Showcase = () => {
                 className="flex flex-col items-center justify-center cursor-pointer shadow-lg overflow-hidden rounded-lg group"
                 onClick={() => setModalImage(item.img)}
               >
-                <img src={item.img} alt="certificate" className=" transition-transform duration-500 hover:scale-105" />
+                <img
+                  src={item.img}
+                  alt="certificate"
+                  className=" transition-transform duration-500 hover:scale-105"
+                />
               </div>
             ))}
           </div>
@@ -238,65 +244,74 @@ const Showcase = () => {
   };
 
   return (
-    <div className="p-8 md:px-36 px-3 font-poppins bg-slate-100 relative">
-      <div className="text-center font-poppins">
-        <h1 className="md:text-7xl text-2xl text-blue-900 font-extrabold">Portofolio Showcase</h1>
-        <p className="max-w-[730px] mx-auto text-sm md:text-xl mt-2 mb-7">
-          Discover my journey through projects, certifications, and technical expertise. Each
-          section highlights a milestone in my ongoing pursuit of knowledge and growth.
-        </p>
-      </div>
-
-      <div className="flex justify-between bg-slate-900 text-white p-2 rounded-2xl md:gap-4 gap-1 mb-8">
-        <button
-          className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
-            activeTab === "Project" ? "bg-red-800" : " hover:bg-red-800"
-          }`}
-          onClick={() => setActiveTab("Project")}
-        >
-          <FaCode className="text-1xl mx-auto mb-1" />
-          Project
-        </button>
-        <button
-          className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
-            activeTab === "Certificate" ? "bg-purple-800" : " hover:bg-purple-800"
-          }`}
-          onClick={() => setActiveTab("Certificate")}
-        >
-          <LiaCertificateSolid className="text-1xl mx-auto mb-1" />
-          Certificate
-        </button>
-        <button
-          className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
-            activeTab === "Tech Stack" ? "bg-yellow-500" : " hover:bg-yellow-500"
-          }`}
-          onClick={() => setActiveTab("Tech Stack")}
-        >
-          <GrTechnology className="text-1xl mx-auto mb-1" />
-          Tech Stack
-        </button>
-      </div>
-
-      {renderContent()}
-
-      {/* Modal Certificate */}
-      {modalImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-          <div className="relative">
-            <img
-              src={modalImage}
-              alt="certificate"
-              className="rounded-lg max-w-[90vw] max-h-[90vh] object-contain"
-            />
-            <button
-              className="absolute top-4 right-4 text-white text-3xl font-bold bg-black rounded-xl w-8 h-8 flex items-center justify-center"
-              onClick={() => setModalImage(null)}
-            >
-              &times;
-            </button>
-          </div>
+    <div className="max-w-[1440px] mx-auto">
+      <div className="p-8 md:px-36 px-3 font-poppins bg-slate-100 relative">
+        <div className="text-center font-poppins">
+          <h1 className="md:text-7xl text-2xl text-blue-900 font-extrabold">
+            Portofolio Showcase
+          </h1>
+          <p className="max-w-[730px] mx-auto text-sm md:text-xl mt-2 mb-7">
+            Discover my journey through projects, certifications, and technical
+            expertise. Each section highlights a milestone in my ongoing pursuit
+            of knowledge and growth.
+          </p>
         </div>
-      )}
+
+        <div className="flex justify-between bg-slate-900 text-white p-2 rounded-2xl md:gap-4 gap-1 mb-8">
+          <button
+            className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
+              activeTab === "Project" ? "bg-red-800" : " hover:bg-red-800"
+            }`}
+            onClick={() => setActiveTab("Project")}
+          >
+            <FaCode className="text-1xl mx-auto mb-1" />
+            Project
+          </button>
+          <button
+            className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
+              activeTab === "Certificate"
+                ? "bg-purple-800"
+                : " hover:bg-purple-800"
+            }`}
+            onClick={() => setActiveTab("Certificate")}
+          >
+            <LiaCertificateSolid className="text-1xl mx-auto mb-1" />
+            Certificate
+          </button>
+          <button
+            className={`flex-1 md:px-4 px-1 md:py-5 py-2 rounded-lg font-medium md:text-xl text-sm transition text-center ${
+              activeTab === "Tech Stack"
+                ? "bg-yellow-500"
+                : " hover:bg-yellow-500"
+            }`}
+            onClick={() => setActiveTab("Tech Stack")}
+          >
+            <GrTechnology className="text-1xl mx-auto mb-1" />
+            Tech Stack
+          </button>
+        </div>
+
+        {renderContent()}
+
+        {/* Modal Certificate */}
+        {modalImage && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+            <div className="relative">
+              <img
+                src={modalImage}
+                alt="certificate"
+                className="rounded-lg max-w-[90vw] max-h-[90vh] object-contain"
+              />
+              <button
+                className="absolute top-4 right-4 text-white text-3xl font-bold bg-black rounded-xl w-8 h-8 flex items-center justify-center"
+                onClick={() => setModalImage(null)}
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
